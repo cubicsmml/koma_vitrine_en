@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Köma account deletion request">
+  <title>Account Deletion - Köma</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, #0A0A0A 0%, #1A1A1A 100%);
+      color: #FFFFFF;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    
+    .container {
+      max-width: 600px;
+      background: rgba(26, 26, 26, 0.8);
+      border: 1px solid rgba(255, 221, 0, 0.2);
+      border-radius: 24px;
+      padding: 40px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    }
+    
+    .logo {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    
+    .logo h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #FFDD00;
+    }
+    
+    .logo h1 em {
+      font-style: normal;
+      opacity: 0.5;
+    }
+    
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      color: #FFFFFF;
+    }
+    
+    p {
+      line-height: 1.7;
+      color: #C4C4C4;
+      margin-bottom: 20px;
+      font-size: 1.05rem;
+    }
+    
+    .info-box {
+      background: rgba(255, 221, 0, 0.1);
+      border: 1px solid rgba(255, 221, 0, 0.3);
+      border-radius: 12px;
+      padding: 20px;
+      margin: 25px 0;
+    }
+    
+    .info-box h3 {
+      color: #FFDD00;
+      margin-bottom: 15px;
+      font-size: 1.2rem;
+    }
+    
+    .info-box ul {
+      margin-left: 20px;
+      color: #E4E4E4;
+    }
+    
+    .info-box li {
+      margin-bottom: 10px;
+      line-height: 1.6;
+    }
+    
+    .contact {
+      background: rgba(10, 10, 10, 0.5);
+      border-radius: 12px;
+      padding: 25px;
+      margin-top: 30px;
+    }
+    
+    .contact h3 {
+      color: #FFDD00;
+      margin-bottom: 15px;
+    }
+    
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin: 15px 0;
+      padding: 15px;
+      background: rgba(255, 221, 0, 0.05);
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+    
+    .contact-item:hover {
+      background: rgba(255, 221, 0, 0.1);
+      transform: translateX(5px);
+    }
+    
+    .contact-icon {
+      font-size: 1.5rem;
+    }
+    
+    .contact-link {
+      color: #FFFFFF;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    
+    .contact-link:hover {
+      color: #FFDD00;
+    }
+    
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 16px 32px;
+      background: #FFDD00;
+      color: #0A0A0A;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+      margin-top: 20px;
+      font-size: 1.05rem;
+    }
+    
+    .btn:hover {
+      background: #E6C700;
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px rgba(255, 221, 0, 0.3);
+    }
+    
+    .footer {
+      text-align: center;
+      margin-top: 30px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 221, 0, 0.1);
+      color: #6A6A6A;
+      font-size: 0.9rem;
+    }
+    
+    @media (max-width: 768px) {
+      .container {
+        padding: 25px;
+      }
+      
+      .logo h1 {
+        font-size: 2rem;
+      }
+      
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <h1>kö<em>ma</em></h1>
+    </div>
+    
+    <h2>Account and Data Deletion</h2>
+    
+    <p>
+      At Köma, we respect your privacy and your right to control your personal data. 
+      You can request the deletion of your account and all associated data at any time.
+    </p>
+    
+    <div class="info-box">
+      <h3>📋 Data that will be deleted</h3>
+      <ul>
+        <li>Personal information (name, email, phone)</li>
+        <li>Transaction history</li>
+        <li>Imported contact data</li>
+        <li>App settings and preferences</li>
+        <li>All other data linked to your account</li>
+      </ul>
+    </div>
+    
+    <div class="info-box">
+      <h3>⚠️ Important to know</h3>
+      <ul>
+        <li>Deletion is <strong>final and irreversible</strong></li>
+        <li>Your balance must be zero before deletion</li>
+        <li>Pending transactions must be completed</li>
+        <li>Processing may take up to <strong>30 days</strong></li>
+        <li>You will receive an email confirmation once completed</li>
+      </ul>
+    </div>
+    
+    <div class="contact">
+      <h3>📱 How to submit a request?</h3>
+      <p style="color: #E4E4E4; margin-bottom: 20px;">
+        To request account deletion, contact us using one of the following methods:
+      </p>
+      
+      <div class="contact-item">
+        <span class="contact-icon">📧</span>
+        <div>
+          <div style="font-size: 0.9rem; color: #9A9A9A; margin-bottom: 5px;">Email</div>
+          <a href="mailto:cubicsmml@gmail.com?subject=Köma Account Deletion Request&body=Hello,%0D%0A%0D%0AI would like to delete my Köma account.%0D%0A%0D%0APhone number associated with the account: [Your number]%0D%0A%0D%0AThank you." class="contact-link">cubicsmml@gmail.com</a>
+        </div>
+      </div>
+      
+      <div class="contact-item">
+        <span class="contact-icon">💬</span>
+        <div>
+          <div style="font-size: 0.9rem; color: #9A9A9A; margin-bottom: 5px;">WhatsApp</div>
+          <a href="https://wa.me/22350000188?text=Hello%2C%20I%20would%20like%20to%20delete%20my%20Köma%20account" class="contact-link" target="_blank" rel="noopener">+223 50 00 01 88</a>
+        </div>
+      </div>
+      
+      <a href="mailto:cubicsmml@gmail.com?subject=Köma Account Deletion Request&body=Hello,%0D%0A%0D%0AI would like to delete my Köma account.%0D%0A%0D%0APhone number associated with the account: [Your number]%0D%0A%0D%0AThank you." class="btn">
+        📧 Send a request by email
+      </a>
+    </div>
+    
+    <div class="info-box" style="margin-top: 30px;">
+      <h3>🔒 Partial data deletion</h3>
+      <p style="color: #E4E4E4; margin-bottom: 0;">
+        If you wish to delete only certain data (contacts, history, etc.) 
+        without deleting your account, contact us and specify the data concerned.
+      </p>
+    </div>
+    
+    <div class="footer">
+      <p>© <span id="year"></span> Köma. All rights reserved.</p>
+      <p><a href="https://amadoutoure14.github.io/koma_en_vitrine/" style="color: #FFDD00; text-decoration: none;">Back to website</a></p>
+    </div>
+  </div>
+  
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

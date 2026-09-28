@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Köma - B2B2C platform to digitize employee benefits. Top-up employees, they spend at 30+ partners in Bamako.">
+  <meta name="theme-color" content="#FFDD00">
+  <title>Köma — B2B Employee Benefits Platform</title>
+  <link rel="icon" type="image/x-icon" href="assets/köma.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Clash+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader-content">
+      <img src="assets/black.png" alt="Köma" class="loader-logo">
+      <div class="loader-bar">
+        <div class="loader-progress"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="container nav-container">
+      <a href="#hero" class="logo">
+        <img src="assets/white.png" alt="Köma">
+        <span>kö<em>ma</em></span>
+      </a>
+
+      <div class="nav-menu" id="navMenu">
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#app" class="nav-link">The App</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="https://wa.me/22350000188" class="btn btn-primary btn-sm" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+          </svg>
+          WhatsApp
+        </a>
+      </div>
+
+      <button class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+      <div class="gradient-orb orb-3"></div>
+    </div>
+
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="pulse-dot"></span>
+          B2B2C solution for businesses in Mali
+        </div>
+
+        <h1 class="hero-title">
+          Offer <span class="gradient-text">digital</span>
+          benefits to your employees
+        </h1>
+
+        <p class="hero-desc">
+          Köma is the B2B platform that enables companies to top up their employees 
+          with benefits (shopping, transport, fuel) spendable at 30+ partners in Bamako.
+        </p>
+
+        <div class="hero-cta">
+          <a href="https://wa.me/22350000188?text=Hello%2C%20I%20would%20like%20a%20Köma%20demo%20for%20my%20company" class="btn btn-primary btn-lg" target="_blank" rel="noopener">
+            Request a demo
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=com.src.koma_mobile" class="btn btn-outline btn-lg" target="_blank" rel="noopener">
+            Download the app
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-value"><span class="counter" data-target="30">0</span>+</div>
+            <div class="stat-label">Merchants</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <div class="stat-value"><span class="counter" data-target="50">0</span>+</div>
+            <div class="stat-label">Companies</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <div class="stat-value"><span class="counter" data-target="1000">0</span>+</div>
+            <div class="stat-label">Beneficiaries</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- How it Works -->
+  <section class="features" id="how-it-works" style="background: linear-gradient(135deg, #0A0A0A 0%, #1A1A1A 100%);">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">How it Works</div>
+        <h2>Simple as 1, 2, 3</h2>
+        <p>A B2B2C ecosystem where everyone wins</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon" style="background: linear-gradient(135deg, #FFDD00 0%, #FFC700 100%);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M19 21v-2a4 4 0 00-4-4H9a4 4 0 00-4 4v2"/>
+              <circle cx="12" cy="7" r="4"/>
+              <path d="M16 11l3-3m0 0l-3-3m3 3H13"/>
+            </svg>
+          </div>
+          <h3>1. Your company subscribes</h3>
+          <p>Create a company account, add your employee beneficiaries and define their monthly benefits</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon" style="background: linear-gradient(135deg, #4CAF50 0%, #45A049 100%);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M12 6v6l4 2"/>
+              <path d="M16 2l2 2-2 2"/>
+            </svg>
+          </div>
+          <h3>2. Top-up in real-time</h3>
+          <p>Instantly credit your employees' accounts as needed: monthly, ad-hoc or event-based</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon" style="background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+          <h3>3. They spend at our partners</h3>
+          <p>Your employees use their benefits at 30+ merchants in Bamako: restaurants, shops, transport...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Features</div>
+        <h2>A complete platform for everyone</h2>
+        <p>Tools designed for companies, employees and merchants</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+            </svg>
+          </div>
+          <h3>Beneficiary Management</h3>
+          <p>Easily add, remove and manage your employees' accounts from your dashboard</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2v20M2 12h20"/>
+              <circle cx="12" cy="12" r="10"/>
+            </svg>
+          </div>
+          <h3>Instant Top-up</h3>
+          <p>Credit individually or in bulk. Balance is immediately available for your employees</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/>
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+              <line x1="12" y1="22.08" x2="12" y2="12"/>
+            </svg>
+          </div>
+          <h3>Partner Network</h3>
+          <p>30+ partner merchants where your employees can use their benefits: shopping, restaurants, transport</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+              <path d="M12 8v4M12 16h.01"/>
+            </svg>
+          </div>
+          <h3>Real-time Notifications</h3>
+          <p>Receive instant alerts for every operation: top-up, spend, validation</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+              <line x1="16" y1="2" x2="16" y2="6"/>
+              <line x1="8" y1="2" x2="8" y2="6"/>
+              <line x1="3" y1="10" x2="21" y2="10"/>
+            </svg>
+          </div>
+          <h3>Detailed History</h3>
+          <p>View complete operation history with filters by date, employee, merchant and type</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              <path d="M9 12l2 2 4-4"/>
+            </svg>
+          </div>
+          <h3>Maximum Security</h3>
+          <p>Encrypted transactions, protected data, PIN code validation and enhanced authentication</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- App Showcase -->
+  <section class="app-showcase" id="app">
+    <div class="container">
+      <div class="app-content">
+        <div class="app-images">
+          <div class="app-mockup mockup-1">
+            <img src="assets/client.png" alt="Köma Interface">
+          </div>
+          <div class="app-mockup mockup-2">
+            <img src="assets/vendeur.png" alt="Merchant Interface">
+          </div>
+        </div>
+
+        <div class="app-info">
+          <div class="section-label">The Application</div>
+          <h2>3 apps for 3 profiles</h2>
+          <p class="lead">A dedicated interface for each actor in the Köma ecosystem: companies, employees and merchants.</p>
+
+          <div class="app-features">
+            <div class="app-feature">
+              <div class="app-feature-icon">🏢</div>
+              <div>
+                <h4>Companies</h4>
+                <p>Dashboard to manage your employees, perform top-ups and view statistics</p>
+              </div>
+            </div>
+
+            <div class="app-feature">
+              <div class="app-feature-icon">👤</div>
+              <div>
+                <h4>Employees / Beneficiaries</h4>
+                <p>Check your balance, operation history and find merchants near you</p>
+              </div>
+            </div>
+
+            <div class="app-feature">
+              <div class="app-feature-icon">🏪</div>
+              <div>
+                <h4>Merchants / Vendors</h4>
+                <p>Accept Köma payments, manage your sales and track your revenue in real-time</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="https://play.google.com/store/apps/details?id=com.src.koma_mobile" class="btn btn-primary" target="_blank" rel="noopener">
+            Download on Google Play
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partners -->
+  <section class="partners" id="partners">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Our Partners</div>
+        <h2>30+ Partner Merchants</h2>
+        <p>Restaurants, shops, supermarkets... Your employees spend their benefits at our partners in Bamako</p>
+      </div>
+
+      <div class="partners-grid">
+        <div class="partner-card">
+          <div class="partner-icon">🍽️</div>
+          <h3>TONINO MARKET</h3>
+          <p>Restaurant</p>
+        </div>
+        <div class="partner-card">
+          <div class="partner-icon">🍔</div>
+          <h3>BEK Resto FAST-FOOD</h3>
+          <p>Fast-Food</p>
+        </div>
+        <div class="partner-card">
+          <div class="partner-icon">🍕</div>
+          <h3>CHAPCHAP</h3>
+          <p>Restaurant</p>
+        </div>
+        <div class="partner-card">
+          <div class="partner-icon">👨‍🍳</div>
+          <h3>LE TRAITEUR 2.0</h3>
+          <p>Catering</p>
+        </div>
+        <div class="partner-card">
+          <div class="partner-icon">🛍️</div>
+          <h3>UWI</h3>
+          <p>Retail</p>
+        </div>
+        <div class="partner-card">
+          <div class="partner-icon">🍴</div>
+          <h3>BVG RESTO</h3>
+          <p>Restaurant</p>
+        </div>
+        <div class="partner-card">
+          <div class="partner-icon">🛒</div>
+          <h3>Kadi Shop</h3>
+          <p>Shop</p>
+        </div>
+        <div class="partner-card">
+          <div class="partner-icon">🌳</div>
+          <h3>SOUS-BOIS</h3>
+          <p>Restaurant</p>
+        </div>
+        <div class="partner-card">
+          <div class="partner-icon">🍽️</div>
+          <h3>RESTAURANT NIARE</h3>
+          <p>Restaurant</p>
+        </div>
+        <div class="partner-card">
+          <div class="partner-icon">🛍️</div>
+          <h3>Fati Shop</h3>
+          <p>Shop</p>
+        </div>
+        <div class="partner-card">
+          <div class="partner-icon">🥘</div>
+          <h3>GUADOUMA</h3>
+          <p>Restaurant</p>
+        </div>
+        <div class="partner-card">
+          <div class="partner-icon">👩‍🍳</div>
+          <h3>Restaurant Fatima</h3>
+          <p>Restaurant</p>
+        </div>
+        <div class="partner-card">
+          <div class="partner-icon">🍖</div>
+          <h3>BATOS</h3>
+          <p>Restaurant</p>
+        </div>
+        <div class="partner-card">
+          <div class="partner-icon">👗</div>
+          <h3>H TENDANCE</h3>
+          <p>Fashion Boutique</p>
+        </div>
+        <div class="partner-card">
+          <div class="partner-icon">👔</div>
+          <h3>Djok Fashion</h3>
+          <p>Fashion Boutique</p>
+        </div>
+        <div class="partner-card">
+          <div class="partner-icon">🍛</div>
+          <h3>AfroCuisine</h3>
+          <p>Restaurant</p>
+        </div>
+        <div class="partner-card">
+          <div class="partner-icon">🍱</div>
+          <h3>RESTO MACE DELICE</h3>
+          <p>Restaurant</p>
+        </div>
+        <div class="partner-card">
+          <div class="partner-icon">🏪</div>
+          <h3>CIM MARKET</h3>
+          <p>Supermarket</p>
+        </div>
+        <div class="partner-card">
+          <div class="partner-icon">🎯</div>
+          <h3>AG-DJIME</h3>
+          <p>Retail</p>
+        </div>
+        <div class="partner-card">
+          <div class="partner-icon">🍲</div>
+          <h3>CANTINE DJELIKA</h3>
+          <p>Canteen</p>
+        </div>
+        <div class="partner-card">
+          <div class="partner-icon">💼</div>
+          <h3>MMK SOLUTION</h3>
+          <p>Services</p>
+        </div>
+        <div class="partner-card">
+          <div class="partner-icon">🍴</div>
+          <h3>RESTO TERANGA</h3>
+          <p>Restaurant</p>
+        </div>
+        <div class="partner-card">
+          <div class="partner-icon">🥗</div>
+          <h3>RESTO A TABLE</h3>
+          <p>Restaurant</p>
+        </div>
+        <div class="partner-card">
+          <div class="partner-icon">🍽️</div>
+          <h3>RESTO M-KEITA</h3>
+          <p>Restaurant</p>
+        </div>
+        <div class="partner-card">
+          <div class="partner-icon">☕</div>
+          <h3>YARA CAFE</h3>
+          <p>Café</p>
+        </div>
+        <div class="partner-card">
+          <div class="partner-icon">🛍️</div>
+          <h3>Fantys SHOP</h3>
+          <p>Shop</p>
+        </div>
+        <div class="partner-card">
+          <div class="partner-icon">📦</div>
+          <h3>DT_XPRESS</h3>
+          <p>Services</p>
+        </div>
+        <div class="partner-card">
+          <div class="partner-icon">🥤</div>
+          <h3>AG LASSI</h3>
+          <p>Retail</p>
+        </div>
+        <div class="partner-card">
+          <div class="partner-icon">👜</div>
+          <h3>YaraBoutiQ</h3>
+          <p>Shop</p>
+        </div>
+        <div class="partner-card">
+          <div class="partner-icon">🏬</div>
+          <h3>HQ-BOUTIQUE</h3>
+          <p>Shop</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <div class="section-label light">Contact</div>
+          <h2>Interested in Köma?</h2>
+          <p>Contact us for a personalized demo and discover how Köma can transform the management of your employee benefits.</p>
+
+          <div class="contact-methods">
+            <a href="https://wa.me/22350000188?text=Hello%2C%20I%20would%20like%20a%20Köma%20demo%20for%20my%20company" class="contact-method" target="_blank">
+              <div class="method-icon whatsapp">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                </svg>
+              </div>
+              <div>
+                <div class="method-label">WhatsApp</div>
+                <div class="method-value">+223 50 00 01 88</div>
+              </div>
+            </a>
+
+            <a href="mailto:cubicsmml@gmail.com?subject=Köma Demo Request&body=Hello%2C%0D%0A%0D%0AI would like a demo of the Köma platform for my company.%0D%0A%0D%0ACompany name: %0D%0ANumber of employees: %0D%0APhone: %0D%0A%0D%0AThank you." class="contact-method">
+              <div class="method-icon email">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </div>
+              <div>
+                <div class="method-label">Email</div>
+                <div class="method-value">cubicsmml@gmail.com</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="#hero" class="footer-logo">
+            <img src="assets/black.png" alt="Köma">
+            <span>kö<em>ma</em></span>
+          </a>
+          <p>B2B2C employee benefits platform in Mali</p>
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>Navigation</h4>
+            <a href="#features">Features</a>
+            <a href="#app">The App</a>
+            <a href="#contact">Contact</a>
+          </div>
+
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <a href="account-deletion.html">Account Deletion</a>
+            <a href="mailto:cubicsmml@gmail.com">Privacy Policy</a>
+          </div>
+
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <a href="https://wa.me/22350000188" target="_blank">WhatsApp</a>
+            <a href="mailto:cubicsmml@gmail.com">Email</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Köma. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
